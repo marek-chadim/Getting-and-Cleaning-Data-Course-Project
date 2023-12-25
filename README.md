@@ -31,3 +31,8 @@ You should create one R script called run_analysis.R that does the following.
 Good luck!
 
 
+```{r }
+tidyData <- read.csv("C:/Users/chadi/Dropbox/courseradatascience/jhu_data_science/courseradatascience/tidyData.txt")
+View(tidyData)
+```
+
