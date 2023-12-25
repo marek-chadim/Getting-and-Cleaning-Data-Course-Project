@@ -32,7 +32,23 @@ Good luck!
 
 
 ```{r }
-tidyData <- read.csv("C:/Users/chadi/Dropbox/courseradatascience/jhu_data_science/courseradatascience/tidyData.txt")
-View(tidyData)
+tidyData <- read.csv("tidyData.txt")
+as_tibble(tidyData)
+
+# A tibble: 180 × 68
+   SubjectNum Activity           `tBodyAcc-mean-X` `tBodyAcc-mean-Y` `tBodyAcc-mean-Z` `tBodyAcc-std-X` `tBodyAcc-std-Y` `tBodyAcc-std-Z` `tGravityAcc-mean-X`
+   <fct>      <fct>                          <dbl>             <dbl>             <dbl>            <dbl>            <dbl>            <dbl>                <dbl>
+ 1 1          WALKING                        0.277          -0.0174            -0.111           -0.284           0.114            -0.260                 0.935
+ 2 1          WALKING_UPSTAIRS               0.255          -0.0240            -0.0973          -0.355          -0.00232          -0.0195                0.893
+ 3 1          WALKING_DOWNSTAIRS             0.289          -0.00992           -0.108            0.0300         -0.0319           -0.230                 0.932
+ 4 1          SITTING                        0.261          -0.00131           -0.105           -0.977          -0.923            -0.940                 0.832
+ 5 1          STANDING                       0.279          -0.0161            -0.111           -0.996          -0.973            -0.980                 0.943
+ 6 1          LAYING                         0.222          -0.0405            -0.113           -0.928          -0.837            -0.826                -0.249
+ 7 2          WALKING                        0.276          -0.0186            -0.106           -0.424          -0.0781           -0.425                 0.913
+ 8 2          WALKING_UPSTAIRS               0.247          -0.0214            -0.153           -0.304           0.108            -0.112                 0.791
+ 9 2          WALKING_DOWNSTAIRS             0.278          -0.0227            -0.117            0.0464          0.263            -0.103                 0.862
+10 2          SITTING                        0.277          -0.0157            -0.109           -0.987          -0.951            -0.960                 0.940
+# ℹ 170 more rows
+# ℹ 59 more variables
 ```
 
